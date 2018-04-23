@@ -10,10 +10,13 @@ import random
 # 画像をランダムで生成
 def generateImg():
     #---この関数の処理を記述---
+    vec = np.array([])
 
+    for i in range(25):
+        rndnum = random.randint(0,1)
+        vec = np.append(vec, rndnum)
 
-
-  
+    return vec
     #------------------------
 
 # 画像として出力
